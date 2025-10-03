@@ -7,16 +7,16 @@
     <title>Home/X</title>
 
     <meta property="og:title" content="X Twitter Clone">
-  <meta property="og:description" content="A beginner-friendly Twitter homepage clone built with Tailwind CSS.">
-  <meta property="og:image" content="https://AsmaAnwar05.github.io/X-twitter-clone/preview.png">
-  <meta property="og:url" content="https://AsmaAnwar05.github.io/X-twitter-clone/">
-  <meta property="og:type" content="website">
+    <meta property="og:description" content="A beginner-friendly Twitter homepage clone built with Tailwind CSS.">
+    <meta property="og:image" content="https://AsmaAnwar05.github.io/X-twitter-clone/preview.png">
+    <meta property="og:url" content="https://AsmaAnwar05.github.io/X-twitter-clone/">
+    <meta property="og:type" content="website">
 
-  
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="X Twitter Clone">
-  <meta name="twitter:description" content="A beginner-friendly Twitter homepage clone built with Tailwind CSS.">
-  <meta name="twitter:image" content="https://AsmaAnwar05.github.io/X-twitter-clone/preview.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="X Twitter Clone">
+    <meta name="twitter:description" content="A beginner-friendly Twitter homepage clone built with Tailwind CSS.">
+    <meta name="twitter:image" content="https://AsmaAnwar05.github.io/X-twitter-clone/preview.png">
 
     <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter-pip.3.ico">
     <link rel="stylesheet"
@@ -25,14 +25,15 @@
 
 </head>
 
-<body class=" bg-black text-white m-0 px-0 py-0">
-    <div class="flex mx-auto">
+<body class=" bg-black text-white m-0 px-0 py-0 max-w-full">
+    <div class="flex mx-auto flex-col sm:flex-row max-w-full">
 
-        <div class="first flex w-[60%] justify-end sticky top-0 h-fit">
+        <div
+            class="first bg-black botder-t-[1px] border-gray-500 max-w-full order-last flex justify-between lg:w-[30%] xl:w-[60%] sm:order-first sm:justify-around sticky bottom-0 h-fit sm:top-0 sm:h-fit sm:px-2">
 
-            <div class="w-[65%]">
+            <div class="w-full sm:w-fit flex sm:flex-col justify-around">
 
-                <div class="logo invert w-9 m-4 py-auto">
+                <div class="logo hidden sm:block invert w-9 m-4 py-auto">
                     <svg viewBox="0 0 29 29" aria-hidden="true">
                         <g>
                             <path
@@ -41,34 +42,34 @@
                         </g>
                     </svg>
                 </div>
-                <div class="sidebar flex">
-                    <ul class="flex flex-col text-xl w-52">
+                <div class="sidebar flex w-full">
+                    <ul class="flex w-full sm:flex-col text-xl justify-around sm:justify-start w-full sm:mt-4 xl:w-52">
                         <li
-                            class="flex gap-4 px-4 py-[.75rem] w-fit hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-90 hover:rounded-full">
+                            class="flex order-1 gap-4 px-4 py-[.75rem] w-fit hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-90 hover:rounded-full">
                             <span class="material-symbols-outlined text-3xl">
                                 home
-                            </span> Home
+                            </span> <span class="hidden xl:block"> Home</span>
                         </li>
                         <li
-                            class="flex  gap-4 px-4 py-[.75rem]  w-fit hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-90 hover:rounded-full">
+                            class="flex order-2  gap-4 px-4 py-[.75rem]  w-fit hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-90 hover:rounded-full">
                             <span class="material-symbols-outlined text-3xl">
                                 search
-                            </span>Explore
+                            </span><span class="hidden xl:block">Explore</span>
                         </li>
                         <li
-                            class="flex gap-4 px-4 py-[.75rem]  w-fit hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-90 hover:rounded-full">
+                            class="flex order-4 gap-4 px-4 py-[.75rem]  w-fit hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-90 hover:rounded-full">
                             <span class="material-symbols-outlined text-3xl">
                                 notifications
-                            </span> Notification
+                            </span> <span class="hidden xl:block">Notification</span>
                         </li>
                         <li
-                            class="flex gap-4 px-4 py-[.75rem] w-fit hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-90 hover:rounded-full">
+                            class="flex order-5 gap-4 px-4 py-[.75rem] w-fit hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-90 hover:rounded-full">
                             <span class="material-symbols-outlined text-3xl">
                                 mail
-                            </span> Messages
+                            </span> <span class="hidden xl:block">Messages</span>
                         </li>
                         <li
-                            class="flex items-center gap-5 px-4 py-[.75rem] w-fit hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-90 hover:rounded-full">
+                            class="flex order-3 items-center gap-5 px-4 py-[.75rem] w-fit hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-90 hover:rounded-full">
                             <span class="grok pt-1">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true"
@@ -80,30 +81,35 @@
                                     </g>
                                 </svg>
                             </span>
-                            Grok
+                            <span class="hidden xl:block">Grok</span>
                         </li>
-                        <li class="communities flex items-center gap-5 px-4 pl-4 py-[.75rem] hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-90 hover:rounded-full">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="invert w-fit h-7">
+                        <li
+                            class="communities hidden sm:flex items-center gap-5 px-4 pl-4 py-[.75rem] hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-90 hover:rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"
+                                class="invert w-fit h-7">
                                 <g>
                                     <path
                                         d="M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm15.998.056L23.528 21H9.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977s6.816 2.358 7 8.977zM21.437 19c-.367-3.781-2.17-6.004-4.938-6.004s-4.57 2.223-4.938 6.004h9.875zm-4.938-9c-.799 0-1.527-.279-2.116-.73-.836-.64-1.384-1.638-1.384-2.77 0-1.93 1.567-3.5 3.5-3.5s3.5 1.57 3.5 3.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zm-1.5-3.5c0 .827.673 1.5 1.5 1.5s1.5-.673 1.5-1.5-.673-1.5-1.5-1.5-1.5.673-1.5 1.5zM7.5 3C9.433 3 11 4.57 11 6.5S9.433 10 7.5 10 4 8.43 4 6.5 5.567 3 7.5 3zm0 2C6.673 5 6 5.673 6 6.5S6.673 8 7.5 8 9 7.327 9 6.5 8.327 5 7.5 5z">
                                     </path>
                                 </g>
-                            </svg>Communities
-                        </li>
-                        <li class="premium flex items-center gap-5 px-4 pl-4 py-[.75rem]   hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-90 hover:rounded-full">
-                            
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true" class="invert w-fit h-8">
-                                    <g>
-                                        <path
-                                            d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z">
-                                        </path>
-                                    </g>
-                                </svg><span class="pb-1">Premium</span>
-                            
+                            </svg>
+                            <span class="hidden xl:block">Communities</span>
                         </li>
                         <li
-                            class="verified-orgs flex items-center gap-5 px-4 pl-4 py-[.75rem]  hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-90 hover:rounded-full">
+                            class="premium hidden sm:flex items-center gap-5 px-4 pl-4 py-[.75rem]   hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-90 hover:rounded-full">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" aria-hidden="true"
+                                class="invert w-fit h-8">
+                                <g>
+                                    <path
+                                        d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z">
+                                    </path>
+                                </g>
+                            </svg><span class="pb-1 hidden xl:block">Premium</span>
+
+                        </li>
+                        <li
+                            class="verified-orgs hidden sm:flex items-center gap-5 px-4 pl-4 py-[.75rem]  hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-90 hover:rounded-full">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-fit h-7 invert" viewBox="0 0 24 24"
                                 aria-hidden="true" class="">
                                 <g>
@@ -111,41 +117,41 @@
                                         d="M7.323 2h11.443l-3 5h6.648L6.586 22.83 7.847 14H2.523l4.8-12zm1.354 2l-3.2 8h4.676l-.739 5.17L17.586 9h-5.352l3-5H8.677z">
                                     </path>
                                 </g>
-                            </svg>Verified Orgs
+                            </svg><span class="hidden xl:block">Verified Orgs</span>
                         </li>
                         <li
-                            class="flex gap-4 px-4 py-[.75rem] w-fit hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-90 hover:rounded-full">
+                            class="person hidden sm:flex gap-4 px-4 py-[.75rem] w-fit hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-90 hover:rounded-full">
                             <span class="material-symbols-outlined text-3xl">
                                 person
-                            </span> Profile
+                            </span> <span class="hidden xl:block">Profile</span>
                         </li>
                         <li
-                            class="flex gap-4 px-4 py-[.75rem] w-fit hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-90 hover:rounded-full">
+                            class="hidden sm:flex gap-4 px-4 py-[.75rem] w-fit hover:cursor-pointer hover:bg-gray-900 hover:bg-opacity-90 hover:rounded-full">
                             <span class="material-symbols-outlined text-3xl">
                                 pending
-                            </span> More
+                            </span><span class="hidden xl:block">More</span>
                         </li>
                     </ul>
                 </div>
-                <div class="post-button">
+                <div class="hidden xl:block post-button">
                     <button
                         class="post bg-white rounded-full py-[1.5%] w-52 h-12 text-black font-semibold text-lg p-auto m-3 cursor-pointer">Post</button>
                 </div>
-                <div class="left-gmail flex justify-between pr-3 pt-4 items-center">
+                <div class="left-gmail hidden sm:flex justify-between pt-4 items-center">
                     <div class="img flex items-center">
-                        <div class="name">
+                        <div class="name w-11px p-2">
 
                             <a href="/053Asma">
                                 <img src="https://pbs.twimg.com/profile_images/1972707961702379520/wjdDPDn4_bigger.png"
-                                    alt="Asma_053" class="w-fit h-[4rem] rounded-full overflow-hidden p-3 ">
+                                    alt="Asma_053" class="w-fit h-11 rounded-full overflow-hidden">
                             </a>
                         </div>
-                        <div class="name-AsmaAnwar05">
+                        <div class="name hidden xl:block">
                             <p class="name font-semibold">Asma_053</p>
                             <p class="AsmaAnwar05 text-gray-400 text-sm">@053Asma</p>
                         </div>
                     </div>
-                    <div class="more">
+                    <div class="more hidden xl:block">
                         <span class="material-symbols-outlined text-xl">
                             more_horiz
                         </span>
@@ -154,338 +160,277 @@
             </div>
         </div>
         <!-----middle---------->
-        <div class="second w-full border-x-gray-400 border-opacity-50 border-x-[1px] ">
-            <div class="post-container">
-                <div class="top flex ">
-                    <div class="left w-1/2 flex justify-center p-4 text-gray-400 hover:bg-zinc-900 cursor-pointer">
-                        <p>For you</p>
-                    </div>
-                    <div class="right w-1/2 flex justify-center p-4 text-gray-400 hover:bg-zinc-900 cursor-pointer">
-                        <p>Following</p>
-                    </div>
-                </div>
-                <div class="line ">
-                    <hr class="border-gray-400 border-opacity-50">
-                </div>
-                <div class="relative cursor-pointer">
-                    <div class="happening flex">
-                        <div class="profile">
-                            <a href="/053Asma">
-                                <img src="https://pbs.twimg.com/profile_images/1972707961702379520/wjdDPDn4_bigger.png"
-                                    alt="Asma_053" class="w-fit h-[3.7rem] rounded-full overflow-hidden p-3 ">
-                            </a>
+        <div class="second w-full border-x-gray-500 lg:border-x-[1px] flex-grow">
+            <div class="post-container w-full ">
+                <div class="w-full border-gray-500 border-b-[1px]">
+                        <div class="top flex py-1">
+                            <div class="logo-profile">
+        
+                            </div>
+                            <div class="left w-[47%] flex justify-center py-2 pl-2 text-gray-400 hover:bg-zinc-900 cursor-pointer">
+                                <p>For you</p>
+                            </div>
+                            <div class="right w-[47%] flex justify-center py-2 pr-2 text-gray-400 hover:bg-zinc-900 cursor-pointer">
+                                <p>Following</p>
+                            </div>
                         </div>
-                        <div class="input">
-                            <input type="text" placeholder="What's happening?"
-                                class="outline-none bg-black text-[1.3rem] cursor-text px-1 py-3">
+                        <div class="line ">
+                            <hr class="border-gray-400 border-opacity-50">
                         </div>
-                    </div>
-                    <div class="globereply flex text-sm space-x-2 absolute left-14 font-semibold text-[#1D9BF0]">
-                        <span class="icon material-symbols-outlined text-sm mx-1">
-                            globe_uk
-                        </span>
-                        <p>Everyone can reply</p>
-                    </div>
-                    <div class="flex justify-center relative left-5  ">
-                        <hr class="border-gray-400 border-opacity-50 mt-8 w-[86%]">
-                    </div>
-                    <div class="bottom flex justify-between relative">
-                        <div class="bottom1 flex justify-around relative left-10 p-5 space-x-4">
-
-                            <span class="material-symbols-outlined text-xl  text-[#1D9BF0] cursor-pointer ">
-                                imagesmode
-                            </span>
-
-                            <span class="material-symbols-outlined text-xl  text-[#1D9BF0] cursor-pointer ">
-                                gif_box
-                            </span>
-                            </span>
-                            <span class="text-blue-500 ">
-                                <svg class="h-6 py-1 cursor-pointer" viewBox="0 0 32 29 " fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M13.2371 21.0407L24.3186 12.8506C24.8619 12.4491 25.6384 12.6057 25.8973 13.2294C27.2597 16.5185 26.651 20.4712 23.9403 23.1851C21.2297 25.8989 17.4581 26.4941 14.0108 25.1386L10.2449 26.8843C15.6463 30.5806 22.2053 29.6665 26.304 25.5601C29.5551 22.3051 30.562 17.8683 29.6205 13.8673L29.629 13.8758C28.2637 7.99809 29.9647 5.64871 33.449 0.844576C33.5314 0.730667 33.6139 0.616757 33.6964 0.5L29.1113 5.09055V5.07631L13.2343 21.0436"
-                                        fill="currentColor" id="mark"></path>
-                                    <path
-                                        d="M10.9503 23.0313C7.07343 19.3235 7.74185 13.5853 11.0498 10.2763C13.4959 7.82722 17.5036 6.82767 21.0021 8.2971L24.7595 6.55998C24.0826 6.07017 23.215 5.54334 22.2195 5.17313C17.7198 3.31926 12.3326 4.24192 8.67479 7.90126C5.15635 11.4239 4.0499 16.8403 5.94992 21.4622C7.36924 24.9165 5.04257 27.3598 2.69884 29.826C1.86829 30.7002 1.0349 31.5745 0.36364 32.5L10.9474 23.0341"
-                                        fill="currentColor" id="mark"></path>
-                                </svg>
-                            </span>
-                            <span class="material-symbols-outlined text-xl  text-[#1D9BF0] scale-x-[-1] cursor-pointer">
-                                event_list
-                            </span>
-                            <span class="material-symbols-outlined text-xl  text-[#1D9BF0] cursor-pointer">
-                                sentiment_satisfied
-                            </span>
-                            <span class="material-symbols-outlined text-xl  text-[#1D9BF0]  cursor-pointer">
-                                calendar_clock
-                            </span>
-                            <span class="material-symbols-outlined text-xl  text-[#1D9BF0] cursor-pointer">
-                                location_on
-                            </span>
-                        </div>
-                        <span>
-                            <button
-                                class="post-button bg-[#86898a] rounded-full w-16 h-9 text-black font-semibold p-auto m-3 cursor-pointer">Post</button>
-                        </span>
-                    </div>
-                    <hr class="border-gray-400 border-opacity-50">
-                </div>
-                <div class="post-section p-4">
-                    <div class="1st flex">
-                        <div class="profile w-[18%] mr-3"><img
-                                src="https://pbs.twimg.com/profile_images/1910026067542433797/8ICFvR9Y_400x400.jpg"
-                                alt="Drew_code0 profile photo" class="w-11 h-11 rounded-full overflow-hidden border" />
-                        </div>
-                        <div class="2nd">
-                            <div class="top flex">
-                                <div class="name font-bold">kieran Drew
+                        <div class="relative cursor-pointer">
+                            <div class="happening flex">
+                                <div class="profile">
+                                    <a href="/053Asma">
+                                        <img src="https://pbs.twimg.com/profile_images/1972707961702379520/wjdDPDn4_bigger.png"
+                                            alt="Asma_053" class="w-fit h-[3.7rem] rounded-full overflow-hidden p-3 ">
+                                    </a>
                                 </div>
-                                <div class="AsmaAnwar05">@Drew_code0·</div>
-                                <div class="time">22h</div>
+                                <div class="input">
+                                    <input type="text" placeholder="What's happening?"
+                                        class="outline-none bg-black text-[1.3rem] cursor-text px-1 py-3">
+                                </div>
                             </div>
-                            <div class="text-part pb-3">Testing AI tools daily has one upside: I know what actually
-                                boosts
-                                productivity.
-                                Typeless + Cursor = insane workflow speed.
-                                Here’s the full list of tools that actually deliver 👇</div>
-                            <div class="image-part rounded-2xl overflow-hidden">
-                                <img src="img/G2DtZsaaoAAMyp5.jpeg" alt="" srcset="">
+                            <div class="globereply flex text-sm space-x-2 absolute left-14 font-semibold text-[#1D9BF0]">
+                                <span class="icon material-symbols-outlined text-sm mx-1">
+                                    globe_uk
+                                </span>
+                                <p>Everyone can reply</p>
                             </div>
-                            <div class="bottom flex justify-between p-2">
-                                <div class="bottom1 flex align-middle space-x-10">
-                                    <div class="reply flex text-zinc-500 text-sm hover:text-[#1D9BF0] cursor pointer ">
-                                        <svg class="w-fit h-5 pr-2 pt-1" viewBox="0 0 85.704 64.542"
+                            <div class="flex justify-center relative left-5  ">
+                                <hr class="border-gray-400 border-opacity-50 mt-8 w-[86%]">
+                            </div>
+                            <div class="bottom flex justify-between relative">
+                                <div class="bottom1 flex justify-around relative left-10 p-5 space-x-4">
+        
+                                    <span class="material-symbols-outlined text-xl  text-[#1D9BF0] cursor-pointer ">
+                                        imagesmode
+                                    </span>
+        
+                                    <span class="material-symbols-outlined text-xl  text-[#1D9BF0] cursor-pointer ">
+                                        gif_box
+                                    </span>
+                                    </span>
+                                    <span class="text-blue-500 ">
+                                        <svg class="h-6 py-1 cursor-pointer" viewBox="0 0 32 29 " fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
-                                            <g transform="matrix(0.9486962,0,0,0.9486962,2.4834364,1.8361818)">
-                                                <path
-                                                    d="M 45.673,0 C 67.781,0 85.703,12.475 85.703,27.862 C 85.703,43.249 67.781,55.724 45.673,55.724 C 38.742,55.724 32.224,54.497 26.539,52.34 C 15.319,56.564 0,64.542 0,64.542 C 0,64.542 9.989,58.887 14.107,52.021 C 15.159,50.266 15.775,48.426 16.128,46.659 C 9.618,41.704 5.643,35.106 5.643,27.862 C 5.643,12.475 23.565,0 45.673,0 M 45.673,2.22 C 24.824,2.22 7.862,13.723 7.862,27.863 C 7.862,34.129 11.275,40.177 17.472,44.893 L 18.576,45.734 L 18.305,47.094 C 17.86,49.324 17.088,51.366 16.011,53.163 C 15.67,53.73 15.294,54.29 14.891,54.837 C 18.516,53.191 22.312,51.561 25.757,50.264 L 26.542,49.968 L 27.327,50.266 C 32.911,52.385 39.255,53.505 45.673,53.505 C 66.522,53.505 83.484,42.002 83.484,27.862 C 83.484,13.722 66.522,2.22 45.673,2.22 L 45.673,2.22 z"
-                                                    fill="none" stroke="currentColor" stroke-width="6"
-                                                    stroke-linejoin="round" stroke-linecap="round" />
-                                            </g>
+                                            <path
+                                                d="M13.2371 21.0407L24.3186 12.8506C24.8619 12.4491 25.6384 12.6057 25.8973 13.2294C27.2597 16.5185 26.651 20.4712 23.9403 23.1851C21.2297 25.8989 17.4581 26.4941 14.0108 25.1386L10.2449 26.8843C15.6463 30.5806 22.2053 29.6665 26.304 25.5601C29.5551 22.3051 30.562 17.8683 29.6205 13.8673L29.629 13.8758C28.2637 7.99809 29.9647 5.64871 33.449 0.844576C33.5314 0.730667 33.6139 0.616757 33.6964 0.5L29.1113 5.09055V5.07631L13.2343 21.0436"
+                                                fill="currentColor" id="mark"></path>
+                                            <path
+                                                d="M10.9503 23.0313C7.07343 19.3235 7.74185 13.5853 11.0498 10.2763C13.4959 7.82722 17.5036 6.82767 21.0021 8.2971L24.7595 6.55998C24.0826 6.07017 23.215 5.54334 22.2195 5.17313C17.7198 3.31926 12.3326 4.24192 8.67479 7.90126C5.15635 11.4239 4.0499 16.8403 5.94992 21.4622C7.36924 24.9165 5.04257 27.3598 2.69884 29.826C1.86829 30.7002 1.0349 31.5745 0.36364 32.5L10.9474 23.0341"
+                                                fill="currentColor" id="mark"></path>
                                         </svg>
-                                        <span>11</span>
+                                    </span>
+                                    <span class="material-symbols-outlined text-xl  text-[#1D9BF0] scale-x-[-1] cursor-pointer">
+                                        event_list
+                                    </span>
+                                    <span class="material-symbols-outlined text-xl  text-[#1D9BF0] cursor-pointer">
+                                        sentiment_satisfied
+                                    </span>
+                                    <span class="material-symbols-outlined text-xl  text-[#1D9BF0]  cursor-pointer">
+                                        calendar_clock
+                                    </span>
+                                    <span class="material-symbols-outlined text-xl  text-[#1D9BF0] cursor-pointer">
+                                        location_on
+                                    </span>
+                                </div>
+                                <span>
+                                    <button
+                                        class="post-button bg-[#86898a] rounded-full w-16 h-9 text-black font-semibold p-auto m-3 cursor-pointer">Post</button>
+                                </span>
+                            </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="post-section p-4">
+                        <div class="1st flex">
+                            <div class="profile min-w-11 mr-3"><img
+                                    src="https://pbs.twimg.com/profile_images/1910026067542433797/8ICFvR9Y_400x400.jpg"
+                                    alt="Drew_code0 profile photo"
+                                    class="w-11 h-11 rounded-full overflow-hidden border" />
+                            </div>
+                            <div class="2nd">
+                                <div class="top flex">
+                                    <div class="name font-bold pr-2">kieran Drew
                                     </div>
-                                    <div
-                                        class="repost flex text-zinc-500 text-sm hover:text-green-600 cursor pointer justify-center">
-                                        <svg class="w-6 h-fit scale-x-95 scale-y-150 rotate-90 pr-2 pt-3"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <polyline points="17 1 21 5 17 9"></polyline>
-                                            <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
-                                            <polyline points="7 23 3 19 7 15"></polyline>
-                                            <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
-                                        </svg>
-                                        <span>5</span>
-                                    </div>
-                                    <div
-                                        class="love w-fit h-4 flex text-zinc-500 text-sm cursor pointer  hover:text-rose-700">
-                                        <span class="material-symbols-outlined pr-2">
-                                            favorite
-                                        </span><span>40</span>
-
-                                    </div>
-                                    <div class="view flex text-zinc-500 text-sm hover:text-[#1D9BF0] cursor pointer ">
-                                        <svg class="w-fit h-5 fill-current pr-2" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 24 24" aria-hidden="true">
-                                            <g>
-                                                <path
-                                                    d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
-                                                </path>
-                                            </g>
-                                        </svg><span>1.5K</span>
-                                    </div>
+                                    <div class="username-tim text-sm text-gray-400">@Drew_code · 22h</div>
 
                                 </div>
-                                <div class="bottom2 flex text-zinc-500 text-sm hover:text-[#1D9BF0] cursor pointer ">
-                                    <div class="bookmark w-fit h-5 pr-2"><span class="material-symbols-outlined">
-                                            bookmark
-                                        </span></div>
-                                    <div class="download text-zinc-500 text-sm hover:text-[#1D9BF0] cursor pointer ">
+                                <div class="text-part pb-3">Testing AI tools daily has one upside: I know what actually
+                                    boosts
+                                    productivity.
+                                    Typeless + Cursor = insane workflow speed.
+                                    Here’s the full list of tools that actually deliver 👇</div>
+                                <div class="image-part rounded-2xl overflow-hidden pr-3">
+                                    <img src="img/G2DtZsaaoAAMyp5.jpeg" alt="" srcset="">
+                                </div>
+                                <div class="bottom flex justify-between pr-5 sm:p-2">
+                                    <div class="bottom1 flex align-middle space-x-10">
+                                        <div
+                                            class="reply flex text-zinc-500 text-sm hover:text-[#1D9BF0] cursor pointer ">
+                                            <svg class="w-fit h-5 pr-2 pt-1" viewBox="0 0 85.704 64.542"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g transform="matrix(0.9486962,0,0,0.9486962,2.4834364,1.8361818)">
+                                                    <path
+                                                        d="M 45.673,0 C 67.781,0 85.703,12.475 85.703,27.862 C 85.703,43.249 67.781,55.724 45.673,55.724 C 38.742,55.724 32.224,54.497 26.539,52.34 C 15.319,56.564 0,64.542 0,64.542 C 0,64.542 9.989,58.887 14.107,52.021 C 15.159,50.266 15.775,48.426 16.128,46.659 C 9.618,41.704 5.643,35.106 5.643,27.862 C 5.643,12.475 23.565,0 45.673,0 M 45.673,2.22 C 24.824,2.22 7.862,13.723 7.862,27.863 C 7.862,34.129 11.275,40.177 17.472,44.893 L 18.576,45.734 L 18.305,47.094 C 17.86,49.324 17.088,51.366 16.011,53.163 C 15.67,53.73 15.294,54.29 14.891,54.837 C 18.516,53.191 22.312,51.561 25.757,50.264 L 26.542,49.968 L 27.327,50.266 C 32.911,52.385 39.255,53.505 45.673,53.505 C 66.522,53.505 83.484,42.002 83.484,27.862 C 83.484,13.722 66.522,2.22 45.673,2.22 L 45.673,2.22 z"
+                                                        fill="none" stroke="currentColor" stroke-width="6"
+                                                        stroke-linejoin="round" stroke-linecap="round" />
+                                                </g>
+                                            </svg>
+                                            <span>11</span>
+                                        </div>
+                                        <div
+                                            class="repost flex text-zinc-500 text-sm hover:text-green-600 cursor pointer justify-center">
+                                            <svg class="w-6 h-fit scale-x-95 scale-y-150 rotate-90 pr-2 pt-3"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="17 1 21 5 17 9"></polyline>
+                                                <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+                                                <polyline points="7 23 3 19 7 15"></polyline>
+                                                <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+                                            </svg>
+                                            <span>5</span>
+                                        </div>
+                                        <div
+                                            class="love w-fit h-4 flex text-zinc-500 text-sm cursor pointer  hover:text-rose-700">
+                                            <span class="material-symbols-outlined pr-2">
+                                                favorite
+                                            </span><span>40</span>
 
-                                        <svg class="w-fit h-5  fill-current" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 24 24" aria-hidden="true">
-                                            <g>
-                                                <path
-                                                    d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
-                                                </path>
-                                            </g>
-                                        </svg>
+                                        </div>
+                                        <div
+                                            class="view flex text-zinc-500 text-sm hover:text-[#1D9BF0] cursor pointer ">
+                                            <svg class="w-fit h-5 fill-current pr-2" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" aria-hidden="true">
+                                                <g>
+                                                    <path
+                                                        d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
+                                                    </path>
+                                                </g>
+                                            </svg><span>1.5K</span>
+                                        </div>
+
+                                    </div>
+                                    <div
+                                        class="hidden bottom2 flex text-zinc-500 text-sm hover:text-[#1D9BF0] cursor pointer ">
+                                        <div class="bookmark w-fit h-5 pr-2"><span class="material-symbols-outlined">
+                                                bookmark
+                                            </span></div>
+                                        <div
+                                            class="download text-zinc-500 text-sm hover:text-[#1D9BF0] cursor pointer ">
+
+                                            <svg class="w-fit h-5  fill-current" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" aria-hidden="true">
+                                                <g>
+                                                    <path
+                                                        d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="border-gray-400 border-opacity-50 border-b-[1px]"></div>
-            </div>
-            <div class="post-container">
-                <div class="top flex ">
-                    <div class="left w-1/2 flex justify-center p-4 text-gray-400 hover:bg-zinc-900 cursor-pointer">
-                        <p>For you</p>
-                    </div>
-                    <div class="right w-1/2 flex justify-center p-4 text-gray-400 hover:bg-zinc-900 cursor-pointer">
-                        <p>Following</p>
-                    </div>
-                </div>
-                <div class="line ">
-                    <hr class="border-gray-400 border-opacity-50">
-                </div>
-                <div class="relative cursor-pointer">
-                    <div class="happening flex">
-                        <div class="profile">
-                            <a href="/053Asma">
-                                <img src="https://pbs.twimg.com/profile_images/1972707961702379520/wjdDPDn4_bigger.png"
-                                    alt="Asma_053" class="w-fit h-[3.7rem] rounded-full overflow-hidden p-3 ">
-                            </a>
-                        </div>
-                        <div class="input">
-                            <input type="text" placeholder="What's happening?"
-                                class="outline-none bg-black text-[1.3rem] cursor-text px-1 py-3">
-                        </div>
-                    </div>
-                    <div class="globereply flex text-sm space-x-2 absolute left-14 font-semibold text-[#1D9BF0]">
-                        <span class="icon material-symbols-outlined text-sm mx-1">
-                            globe_uk
-                        </span>
-                        <p>Everyone can reply</p>
-                    </div>
-                    <div class="flex justify-center relative left-5  ">
-                        <hr class="border-gray-400 border-opacity-50 mt-8 w-[86%]">
-                    </div>
-                    <div class="bottom flex justify-between relative">
-                        <div class="bottom1 flex justify-around relative left-10 p-5 space-x-4">
+                <div>
+                    <div class="post-section p-4">
+                        <div class="1st flex">
+                            <div class="profile min-w-11 mr-3"><img
+                                    src="https://pbs.twimg.com/profile_images/1910026067542433797/8ICFvR9Y_400x400.jpg"
+                                    alt="Drew_code0 profile photo"
+                                    class="w-11 h-11 rounded-full overflow-hidden border" />
+                            </div>
+                            <div class="2nd">
+                                <div class="top flex">
+                                    <div class="name font-bold pr-2">kieran Drew
+                                    </div>
+                                    <div class="username-tim text-sm text-gray-400">@Drew_code · 22h</div>
 
-                            <span class="material-symbols-outlined text-xl  text-[#1D9BF0] cursor-pointer ">
-                                imagesmode
-                            </span>
-
-                            <span class="material-symbols-outlined text-xl  text-[#1D9BF0] cursor-pointer ">
-                                gif_box
-                            </span>
-                            </span>
-                            <span class="text-blue-500 ">
-                                <svg class="h-6 py-1 cursor-pointer" viewBox="0 0 32 29 " fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M13.2371 21.0407L24.3186 12.8506C24.8619 12.4491 25.6384 12.6057 25.8973 13.2294C27.2597 16.5185 26.651 20.4712 23.9403 23.1851C21.2297 25.8989 17.4581 26.4941 14.0108 25.1386L10.2449 26.8843C15.6463 30.5806 22.2053 29.6665 26.304 25.5601C29.5551 22.3051 30.562 17.8683 29.6205 13.8673L29.629 13.8758C28.2637 7.99809 29.9647 5.64871 33.449 0.844576C33.5314 0.730667 33.6139 0.616757 33.6964 0.5L29.1113 5.09055V5.07631L13.2343 21.0436"
-                                        fill="currentColor" id="mark"></path>
-                                    <path
-                                        d="M10.9503 23.0313C7.07343 19.3235 7.74185 13.5853 11.0498 10.2763C13.4959 7.82722 17.5036 6.82767 21.0021 8.2971L24.7595 6.55998C24.0826 6.07017 23.215 5.54334 22.2195 5.17313C17.7198 3.31926 12.3326 4.24192 8.67479 7.90126C5.15635 11.4239 4.0499 16.8403 5.94992 21.4622C7.36924 24.9165 5.04257 27.3598 2.69884 29.826C1.86829 30.7002 1.0349 31.5745 0.36364 32.5L10.9474 23.0341"
-                                        fill="currentColor" id="mark"></path>
-                                </svg>
-                            </span>
-                            <span class="material-symbols-outlined text-xl  text-[#1D9BF0] scale-x-[-1] cursor-pointer">
-                                event_list
-                            </span>
-                            <span class="material-symbols-outlined text-xl  text-[#1D9BF0] cursor-pointer">
-                                sentiment_satisfied
-                            </span>
-                            <span class="material-symbols-outlined text-xl  text-[#1D9BF0]  cursor-pointer">
-                                calendar_clock
-                            </span>
-                            <span class="material-symbols-outlined text-xl  text-[#1D9BF0] cursor-pointer">
-                                location_on
-                            </span>
-                        </div>
-                        <span>
-                            <button
-                                class="sub-button bg-[#727475] rounded-full w-16 h-10 text-black font-bold p-auto m-3 cursor-pointer">Post</button>
-                        </span>
-                    </div>
-                    <hr class="border-gray-400 border-opacity-50">
-                </div>
-                <div class="post-section p-4">
-                    <div class="1st flex">
-                        <div class="profile w-[18%] h-fit mr-3"><img
-                                src="https://pbs.twimg.com/profile_images/1910026067542433797/8ICFvR9Y_400x400.jpg"
-                                alt="Drew_code0 profile photo" class="w-11 h-11 rounded-full overflow-hidden border" />
-                        </div>
-                        <div class="2nd">
-                            <div class="top flex">
-                                <div class="name font-bold">kieran Drew
                                 </div>
-                                <div class="AsmaAnwar05">@Drew_code0·</div>
-                                <div class="time">22h</div>
-                            </div>
-                            <div class="text-part pb-3">Testing AI tools daily has one upside: I know what actually
-                                boosts
-                                productivity.
-                                Typeless + Cursor = insane workflow speed.
-                                Here’s the full list of tools that actually deliver 👇</div>
-                            <div class="image-part rounded-2xl overflow-hidden">
-                                <img src="img/G2DtZsaaoAAMyp5.jpeg" alt="" srcset="">
-                            </div>
-                            <div class="bottom flex justify-between p-2">
-                                <div class="bottom1 flex align-middle space-x-10">
-                                    <div class="reply flex text-zinc-500 text-sm hover:text-[#1D9BF0] cursor pointer ">
-                                        <svg class="w-fit h-5 pr-2 pt-1" viewBox="0 0 85.704 64.542"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g transform="matrix(0.9486962,0,0,0.9486962,2.4834364,1.8361818)">
-                                                <path
-                                                    d="M 45.673,0 C 67.781,0 85.703,12.475 85.703,27.862 C 85.703,43.249 67.781,55.724 45.673,55.724 C 38.742,55.724 32.224,54.497 26.539,52.34 C 15.319,56.564 0,64.542 0,64.542 C 0,64.542 9.989,58.887 14.107,52.021 C 15.159,50.266 15.775,48.426 16.128,46.659 C 9.618,41.704 5.643,35.106 5.643,27.862 C 5.643,12.475 23.565,0 45.673,0 M 45.673,2.22 C 24.824,2.22 7.862,13.723 7.862,27.863 C 7.862,34.129 11.275,40.177 17.472,44.893 L 18.576,45.734 L 18.305,47.094 C 17.86,49.324 17.088,51.366 16.011,53.163 C 15.67,53.73 15.294,54.29 14.891,54.837 C 18.516,53.191 22.312,51.561 25.757,50.264 L 26.542,49.968 L 27.327,50.266 C 32.911,52.385 39.255,53.505 45.673,53.505 C 66.522,53.505 83.484,42.002 83.484,27.862 C 83.484,13.722 66.522,2.22 45.673,2.22 L 45.673,2.22 z"
-                                                    fill="none" stroke="currentColor" stroke-width="6"
-                                                    stroke-linejoin="round" stroke-linecap="round" />
-                                            </g>
-                                        </svg>
-                                        <span>11</span>
+                                <div class="text-part pb-3">Testing AI tools daily has one upside: I know what actually
+                                    boosts
+                                    productivity.
+                                    Typeless + Cursor = insane workflow speed.
+                                    Here’s the full list of tools that actually deliver 👇</div>
+                                <div class="image-part rounded-2xl overflow-hidden pr-3">
+                                    <img src="img/G2DtZsaaoAAMyp5.jpeg" alt="" srcset="">
+                                </div>
+                                <div class="bottom flex justify-between pr-5 sm:p-2">
+                                    <div class="bottom1 flex align-middle space-x-10">
+                                        <div
+                                            class="reply flex text-zinc-500 text-sm hover:text-[#1D9BF0] cursor pointer ">
+                                            <svg class="w-fit h-5 pr-2 pt-1" viewBox="0 0 85.704 64.542"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g transform="matrix(0.9486962,0,0,0.9486962,2.4834364,1.8361818)">
+                                                    <path
+                                                        d="M 45.673,0 C 67.781,0 85.703,12.475 85.703,27.862 C 85.703,43.249 67.781,55.724 45.673,55.724 C 38.742,55.724 32.224,54.497 26.539,52.34 C 15.319,56.564 0,64.542 0,64.542 C 0,64.542 9.989,58.887 14.107,52.021 C 15.159,50.266 15.775,48.426 16.128,46.659 C 9.618,41.704 5.643,35.106 5.643,27.862 C 5.643,12.475 23.565,0 45.673,0 M 45.673,2.22 C 24.824,2.22 7.862,13.723 7.862,27.863 C 7.862,34.129 11.275,40.177 17.472,44.893 L 18.576,45.734 L 18.305,47.094 C 17.86,49.324 17.088,51.366 16.011,53.163 C 15.67,53.73 15.294,54.29 14.891,54.837 C 18.516,53.191 22.312,51.561 25.757,50.264 L 26.542,49.968 L 27.327,50.266 C 32.911,52.385 39.255,53.505 45.673,53.505 C 66.522,53.505 83.484,42.002 83.484,27.862 C 83.484,13.722 66.522,2.22 45.673,2.22 L 45.673,2.22 z"
+                                                        fill="none" stroke="currentColor" stroke-width="6"
+                                                        stroke-linejoin="round" stroke-linecap="round" />
+                                                </g>
+                                            </svg>
+                                            <span>11</span>
+                                        </div>
+                                        <div
+                                            class="repost flex text-zinc-500 text-sm hover:text-green-600 cursor pointer justify-center">
+                                            <svg class="w-6 h-fit scale-x-95 scale-y-150 rotate-90 pr-2 pt-3"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="17 1 21 5 17 9"></polyline>
+                                                <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+                                                <polyline points="7 23 3 19 7 15"></polyline>
+                                                <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+                                            </svg>
+                                            <span>5</span>
+                                        </div>
+                                        <div
+                                            class="love w-fit h-4 flex text-zinc-500 text-sm cursor pointer  hover:text-rose-700">
+                                            <span class="material-symbols-outlined pr-2">
+                                                favorite
+                                            </span><span>40</span>
+
+                                        </div>
+                                        <div
+                                            class="view flex text-zinc-500 text-sm hover:text-[#1D9BF0] cursor pointer ">
+                                            <svg class="w-fit h-5 fill-current pr-2" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" aria-hidden="true">
+                                                <g>
+                                                    <path
+                                                        d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
+                                                    </path>
+                                                </g>
+                                            </svg><span>1.5K</span>
+                                        </div>
+
                                     </div>
                                     <div
-                                        class="repost flex text-zinc-500 text-sm hover:text-green-600 cursor pointer justify-center">
-                                        <svg class="w-6 h-fit scale-x-95 scale-y-150 rotate-90 pr-2 pt-3"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <polyline points="17 1 21 5 17 9"></polyline>
-                                            <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
-                                            <polyline points="7 23 3 19 7 15"></polyline>
-                                            <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
-                                        </svg>
-                                        <span>5</span>
-                                    </div>
-                                    <div
-                                        class="love w-fit h-4 flex text-zinc-500 text-sm cursor pointer  hover:text-rose-700">
-                                        <span class="material-symbols-outlined pr-2">
-                                            favorite
-                                        </span><span>40</span>
+                                        class="hidden bottom2 flex text-zinc-500 text-sm hover:text-[#1D9BF0] cursor pointer ">
+                                        <div class="bookmark w-fit h-5 pr-2"><span class="material-symbols-outlined">
+                                                bookmark
+                                            </span></div>
+                                        <div
+                                            class="download text-zinc-500 text-sm hover:text-[#1D9BF0] cursor pointer ">
 
-                                    </div>
-                                    <div class="view flex text-zinc-500 text-sm hover:text-[#1D9BF0] cursor pointer ">
-                                        <svg class="w-fit h-5 fill-current pr-2" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 24 24" aria-hidden="true">
-                                            <g>
-                                                <path
-                                                    d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
-                                                </path>
-                                            </g>
-                                        </svg><span>1.5K</span>
-                                    </div>
-
-                                </div>
-                                <div class="bottom2 flex text-zinc-500 text-sm hover:text-[#1D9BF0] cursor pointer ">
-                                    <div class="bookmark w-fit h-5 pr-2"><span class="material-symbols-outlined">
-                                            bookmark
-                                        </span></div>
-                                    <div class="download text-zinc-500 text-sm hover:text-[#1D9BF0] cursor pointer ">
-
-                                        <svg class="w-fit h-5  fill-current" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 24 24" aria-hidden="true">
-                                            <g>
-                                                <path
-                                                    d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
-                                                </path>
-                                            </g>
-                                        </svg>
+                                            <svg class="w-fit h-5  fill-current" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" aria-hidden="true">
+                                                <g>
+                                                    <path
+                                                        d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="border-gray-400 border-opacity-50 border-b-[1px]"></div>
             </div>
         </div>
         <!-----------------3rd side----------------->
-        <div class="3rd w-[85%] sticky top-0 h-fit">
+        <div class="3rd hidden lg:block w-[85%] sticky top-0 h-fit">
             <div class="flex items-center m-3 px-3 py-1 gap-3 w-[70%] rounded-full 
          border border-gray-400 border-opacity-50 bg-black
          focus-within:border-[#1D9BF0] focus-within:ring-1 transition-colors duration-200">
@@ -569,11 +514,13 @@
                 <div class="flex justify-between">
                     <div class="p-2 hover:cursor-pointer flex ">
                         <div class="img pr-2 pt-2">
-                            <img src="https://pbs.twimg.com/profile_images/1940344470290989057/1OUP8RgK_400x400.jpg" alt="" class="rounded-full overflow-hidden w-11">
+                            <img src="https://pbs.twimg.com/profile_images/1940344470290989057/1OUP8RgK_400x400.jpg"
+                                alt="" class="rounded-full overflow-hidden w-11">
                         </div>
                         <div class="name-user-follow">
 
-                            <p class="name">Cristiano Ronaldo<span class="material-symbols-outlined text-blue-500 text-lg">
+                            <p class="name">Cristiano Ronaldo<span
+                                    class="material-symbols-outlined text-blue-500 text-lg">
                                     verified
                                 </span></p>
                             <p class="AsmaAnwar05 xt-gray-400 text-smte">@Cristiano</p>
@@ -586,14 +533,15 @@
                 <div class="flex justify-between">
                     <div class="p-2 hover:cursor-pointer flex ">
                         <div class="img pr-2 pt-2">
-                            <img src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg" alt="" class="rounded-full overflow-hidden w-11">
+                            <img src="https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg"
+                                alt="" class="rounded-full overflow-hidden w-11">
                         </div>
                         <div class="name-user-follow">
 
                             <p class="name">Tim Cook<span class="material-symbols-outlined text-blue-500 text-lg">
-                                verified
-                            </span></p>
-                        <p class="AsmaAnwar05 xt-gray-400 text-smte">@Tim_cook</p>
+                                    verified
+                                </span></p>
+                            <p class="AsmaAnwar05 xt-gray-400 text-smte">@Tim_cook</p>
                         </div>
                     </div>
                     <button
@@ -603,14 +551,15 @@
                 <div class="flex justify-between">
                     <div class="p-2 hover:cursor-pointer flex ">
                         <div class="img pr-2 pt-2">
-                            <img src="https://pbs.twimg.com/profile_images/1936002956333080576/kqqe2iWO_400x400.jpg" alt="" class="rounded-full overflow-hidden w-11">
+                            <img src="https://pbs.twimg.com/profile_images/1936002956333080576/kqqe2iWO_400x400.jpg"
+                                alt="" class="rounded-full overflow-hidden w-11">
                         </div>
                         <div class="name-user">
 
                             <p class="name">Elon Musk<span class="material-symbols-outlined text-blue-500 text-lg">
-                                verified
-                            </span></p>
-                        <p class="AsmaAnwar05 xt-gray-400 text-smte">@elonmusk</p>
+                                    verified
+                                </span></p>
+                            <p class="AsmaAnwar05 xt-gray-400 text-smte">@elonmusk</p>
                         </div>
                     </div>
                     <button
