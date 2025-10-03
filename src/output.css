@@ -718,6 +718,10 @@ video {
   height: fit-content;
 }
 
+.min-h-\[50px\] {
+  min-height: 50px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -787,8 +791,8 @@ video {
   min-width: 2.75rem;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
+.min-w-\[50px\] {
+  min-width: 50px;
 }
 
 .rotate-90 {
@@ -899,6 +903,10 @@ video {
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.text-wrap {
+  text-wrap: wrap;
 }
 
 .rounded-2xl {
@@ -1248,6 +1256,42 @@ video {
     top: 0px;
   }
 
+  .sm\:order-1 {
+    order: 1;
+  }
+
+  .sm\:order-2 {
+    order: 2;
+  }
+
+  .sm\:order-3 {
+    order: 3;
+  }
+
+  .sm\:order-4 {
+    order: 4;
+  }
+
+  .sm\:order-5 {
+    order: 5;
+  }
+
+  .sm\:order-6 {
+    order: 6;
+  }
+
+  .sm\:order-7 {
+    order: 7;
+  }
+
+  .sm\:order-8 {
+    order: 8;
+  }
+
+  .sm\:order-9 {
+    order: 9;
+  }
+
   .sm\:order-first {
     order: -9999;
   }
@@ -1312,9 +1356,8 @@ video {
     width: 33.333333%;
   }
 
-  .lg\:border-x-\[1px\] {
-    border-left-width: 1px;
-    border-right-width: 1px;
+  .lg\:border-r-0 {
+    border-right-width: 0px;
   }
 }
 
@@ -1329,5 +1372,10 @@ video {
 
   .xl\:w-52 {
     width: 13rem;
+  }
+
+  .xl\:border-x-\[2px\] {
+    border-left-width: 2px;
+    border-right-width: 2px;
   }
 }
