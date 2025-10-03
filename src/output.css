@@ -718,6 +718,10 @@ video {
   height: fit-content;
 }
 
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-11 {
   width: 2.75rem;
 }
@@ -775,12 +779,16 @@ video {
   width: 100%;
 }
 
+.min-w-0 {
+  min-width: 0px;
+}
+
 .min-w-11 {
   min-width: 2.75rem;
 }
 
-.flex-grow {
-  flex-grow: 1;
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .rotate-90 {
@@ -819,8 +827,16 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -1246,6 +1262,10 @@ video {
 
   .sm\:flex {
     display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:w-auto {
