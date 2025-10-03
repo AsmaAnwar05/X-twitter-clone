@@ -598,6 +598,10 @@ video {
   top: 0.5rem;
 }
 
+.bottom-2 {
+  bottom: 0.5rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1246,11 +1250,6 @@ video {
 
   .sm\:flex {
     display: flex;
-  }
-
-  .sm\:h-fit {
-    height: -moz-fit-content;
-    height: fit-content;
   }
 
   .sm\:w-fit {
